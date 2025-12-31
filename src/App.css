@@ -1,0 +1,82 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* App background */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b4d5e3, #1a4d5e, #2c5364);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Center container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #cfd9df;
+  font-size: 1.1rem;
+}
+
+/* Main card */
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 20px;
+    box-sizing: border-box;
+    text-box: inherit; 
+  }
+  .navbar {
+  width: 100%;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: flex-end; /* 👈 moves content to right */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+}
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #407ee2; /* dark slate */
+  cursor: pointer;
+}
+.navbar-logo span {
+  color: #ebe825; /* blue accent */
+}
+}

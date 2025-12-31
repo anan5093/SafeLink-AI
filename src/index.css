@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 1rem 2rem;
+  background: #020617;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  color: #cbd5f5;
+}
+
+/* SCAN */
+.scan-box {
+  margin-top: 2rem;
+}
+
+.scan-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.scan-input input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.scan-input button {
+  background: #2563eb;
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RESULT */
+.result {
+  margin: 1.5rem auto;
+  width: 320px;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #020617;
+}
+
+.result.legitimate {
+  border-left: 6px solid #22c55e;
+}
+
+.result.phishing {
+  border-left: 6px solid #ef4444;
+}
+
+/* FEATURES */
+.features {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 2rem;
+}
+
+/* ABOUT */
+.about {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer a {
+  margin: 0 10px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+.footer p {
+  margin-top: 0.5rem;
+  color: #94a3b8;
+}
