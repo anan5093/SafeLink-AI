@@ -12,6 +12,8 @@ origins = [
     "http://localhost:5173",   # React (Vite)
     "http://localhost",
     "http://127.0.0.1:5173",
+    # Production frontend (GitHub Pages)
+    "https://anan5093.github.io",
 ]
 
 app.add_middleware(
